@@ -1,0 +1,84 @@
+<style>
+   
+    .score-container {
+        gap: 20px;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        padding-left: 10cap;
+        
+    }
+    .playerRow {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        width: 300px;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 8px;
+        
+
+    }
+    .game-container {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        border-color: #9995cf;
+    }
+
+    .dice {
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    body {
+        background-color: #042f4b;
+        margin: 0;
+    }
+
+    h1 {
+        margin: 30px;
+        font-family: "Lobster", cursive;
+        text-shadow: 5px 0 #232931;
+        font-size: 4.5rem;
+        color: #9995cf;
+        text-align: center;
+    }
+
+    p {
+        font-size: 2rem;
+        color: #9995cf;
+        font-family: "Indie Flower", cursive;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container-bottom {
+        padding-top: 30px;
+        
+    }
+
+    .btn {
+        background: #9995cf; 
+        font-family: "Indie Flower", cursive;
+        border-radius: 7px;
+        color: #ffff;
+        font-size: 30px;
+        padding: 16px 25px 16px 25px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+
+    }
+
+    .btn:hover {
+        background: #232931;
+        transform: scale(1.05);
+    }
+
+    
+</style>
