@@ -1,86 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roll The Dice</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="game.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
+    <h1 class="game-title">Roll The Dice</h1>
 
     <!-- Buttons to roll dice for each player-->
     <div class="score-container">
-        <h1 class="game-title">Roll The Dice</h1>
-
-    
-
-        <!-- Display current score card for each player-->
-        <div id="scoreBoard">
-            
-        <div class = "playerRow">
-            <p class=PlayerOne id="scoreCard"> Player 1 </p>
-            <p id="scoreOne"> Score : 0 </p>
-        </div>
-            
-        <div class = "playerRow">
-            <p class=PlayerTwo id="scoreCard"> Player 2 </p>
-            <p id="scoreTwo">Score : 0 </p>
+      <!-- Display current score card for each player-->
+      <div id="scoreBoard">
+        <div class="playerRow">
+          <p class="PlayerOne">Player 1</p>
+          <p id="scoreOne">Score : 0</p>
         </div>
 
-        <div class = "playerRow">
-            <p class=PlayerThree id="scoreCard"> Player 3 </p>
-            <p id="scoreThree"> Score : 0 </p>
+        <div class="playerRow">
+          <p class="PlayerTwo">Player 2</p>
+          <p id="scoreTwo">Score : 0</p>
         </div>
 
-            <!-- Button to reset the game -->
-            <button onclick="resetGame()">Reset Game</button>
-
-            <!-- Player Dice Section -->
-             
-            <div class="game-container">
-                
-                <div class="dice">
-                    <p class="player1">Player 1</p>
-                    <button id = "btnOne">Dice 1</button>
-                <!-- <img class="img1" src="dice6.png"> -->
-            </div>
-
-
-            <div class="dice">
-                <p class="player2">Player 2</p>
-                <button id = "btnTwo">Dice 2</button>
-                <!-- <img class="img2" src="dice6.png"> -->
-            </div>
-
-
-            <div class="dice">
-                <p class="player3">Player 3</p>
-                <button id = "btnThree">Dice 3</button>
-                <!-- <img class="img2" src="dice6.png"> -->
-
-                </div>
-            </div>
-
-
+        <div class="playerRow">
+          <p class="PlayerThree">Player 3</p>
+          <p id="scoreThree">Score : 0</p>
         </div>
 
-        <div class="container-bottom">
-            <button type="button" class="btn" onClick="rollTheDice()">
-                Roll the Dice
-            </button>
+        <button type="button" class="btn" id="editName">Edit Names</button>
+      </div>
+
+      <!-- Player Dice Section -->
+
+      <div class="game-container">
+        <div class="dice">
+          <p class="PlayerOne">Player 1</p>
+          <button id="btnOne">
+            <img id="img1" src="./dice/dice1.png" alt="Dice 1" />
+          </button>
         </div>
 
-        <div class="container-bottom">
-            <button type="button" class="btn" onClick=editNames()>
-                Edit Names
-            </button>
+        <div class="dice">
+          <p class="PlayerTwo">Player 2</p>
+          <button id="btnTwo">
+            <img id="img2" src="./dice/dice2.png" alt="Dice 2" />
+          </button>
         </div>
 
+        <div class="dice">
+          <p class="PlayerThree">Player 3</p>
+          <button id="btnThree">
+            <img id="img3" src="./dice/dice3.png" alt="Dice 3" />
+          </button>
+        </div>
+      </div>
+    </div>
 
-</body>
-
+    <div class="container-bottom">
+      <button class="btn" onclick="resetGame()">Reset Score</button>
+    </div>
+  </body>
 </html>
